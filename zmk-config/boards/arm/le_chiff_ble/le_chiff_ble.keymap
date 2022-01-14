@@ -63,8 +63,8 @@
 //         \  LAlt   |    Ctl    /     \           | Trns    /
 //          ---------------------       --------------------
 			bindings = <
-            &kp reset 	&kp F1 	&kp F2 	&kp F3 	 &kp F4 		&out OUT_USB 	&out OUT_BLE 	&none  		&kp MINUS 	&kp EQUALS
-            &none 	&kp F5 	&kp F6 	&kp F7	 &kp F8 		&kp LBKT 	&kp RBKT 	&kp SEMI 		&kp GRAVE 	&kp BSLH
+            &reset 	&kp F1 	&kp F2 	&kp F3 	 &kp F4 		&out OUT_USB 	&out OUT_BLE 	&none  		&kp MINUS 	&kp EQUALS
+            &none 	&kp F5 	&kp F6 	&kp F7	 &kp F8 		&kp LBKT 	&kp RBKT 	&kp SEMI 	&kp GRAVE 	&kp BSLH
             &kp LSHFT 	&kp F9 	&kp F10 &kp F11  &kp F12      &none     &none 		&none 		&none 		&bootloader	&kp RSHFT
            			 &kp LALT &kp LCTRL 			&none 	&trans
 			>;
