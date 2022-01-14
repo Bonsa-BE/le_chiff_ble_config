@@ -44,13 +44,13 @@
 // /  1  |  2  |  3  |  4  |  5  \     /  6  |  7  |  8  |  9  |  0  \
 // | TAB |BTPRV|BTNXT| VOL-| VOL+| ___ |  <  |  v  |  ^  |  >  |  '  |
 // | Sft |BTSL0|BTCLR| MUT |     ||ESC|| HOME| END | PGUP| PGDN| Sft |
-//         \  LAlt   |    Ctl    /     \   Trns    |  none  /
+//         \  trns   |    trns   /     \   trns    |  trns  /
 //          ---------------------       --------------------
 			bindings = <
             &kp N1      &kp N2 		&kp N3 		&kp N4		&kp N5 		 		&kp N6		&kp N7		&kp N8		&kp N9		&kp N0
             &kp TAB	&bt BT_PRV	&bt BT_NXT 	&kp C_VOL_DN 	&kp C_VOL_UP  	 		&kp LEFT 	&kp DOWN 	&kp UP 		&kp RIGHT 	&kp SQT
             &kp LSHFT 	&bt BT_SEL 0 	&bt BT_CLR 	&kp C_MUTE 	&none		 &kp ESC	&kp HOME 	&kp END 	&kp PG_UP 	&kp PG_DN 	&kp RSHFT
-            						&kp LALT   &kp LCTRL 				&trans	     &none
+            						&kp LGUI     &trans 				&trans	     &none
 			>;
 			sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
 		};
@@ -60,13 +60,13 @@
 // / RST | F1  | F2  | F3  | F4  \     / USB | BLE |     |  -  |  =  \
 // |     | F5  | F6  | F7  | F8  | ___ |  [  |  ]  |  ;  |  `  |  \  |
 // | Sft | F9  | F10 | F11 | F12 ||   ||     |     |     |  BL | Sft |
-//         \  LAlt   |    Ctl    /     \           | Trns    /
+//         \  trns   |    trns   /     \    trns   |  trns    /
 //          ---------------------       --------------------
 			bindings = <
-            &reset 	&kp F1 	&kp F2 	&kp F3 	 &kp F4 		&out OUT_USB 	&out OUT_BLE 	&none  		&kp MINUS 	&kp EQUALS
+            &reset 	&kp F1 	&kp F2 	&kp F3 	 &kp F4 		&out OUT_USB 	&out OUT_BLE 	&none  		&kp MINUS 	&kp EQUAL
             &none 	&kp F5 	&kp F6 	&kp F7	 &kp F8 		&kp LBKT 	&kp RBKT 	&kp SEMI 	&kp GRAVE 	&kp BSLH
             &kp LSHFT 	&kp F9 	&kp F10 &kp F11  &kp F12      &none     &none 		&none 		&none 		&bootloader	&kp RSHFT
-           			 &kp LALT &kp LCTRL 			&none 	&trans
+           			 &trans &trans 				&trans 	&trans
 			>;
 			sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
 		};
