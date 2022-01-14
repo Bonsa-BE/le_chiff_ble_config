@@ -26,15 +26,15 @@
             label = "Qwerty";
 //  _____________________________       _____________________________
 // /  Q  |  W  |  E  |  R  |  T  \     /  Y  |  U  |  I  |  O  |  P   \
-// |  A  |  S  |  D  |  F  |  G  | ___ |  H  |  J  |  K  |  L  |  ENT  |
+// |  A  |  S  |  D  |Sft/F|  G  | ___ |  H  |Sft/J|  K  |  L  |  ENT  |
 // |Sft/Z|  X  |  C  |  V  |  B  ||MUT||  N  |  M  |  ,  |  .  | Sft// |
 //         \CTRL |  BSPC   /     	\  SPC  | ALT/
 //          ---------------------       --------------------
 			bindings = <
-            &kp Q       &kp W   &kp E   &kp R   &kp T                    &kp Y   &kp U   &kp I       &kp O   &kp P
-            &kp A       &kp S   &kp D   &kp F   &kp G                    &kp H   &kp J   &kp K       &kp L   &kp RET
-            &mt LSHFT Z &kp X   &kp C   &kp V   &kp B     &kp C_MUTE     &kp N   &kp M   &kp COMMA   &kp DOT &mt RSHFT FSLH
-                                 &kp LCTRL  &lt 1 BSPC                    &lt 1 SPACE       &kp RALT
+            &kp Q       &kp W   &kp E   &kp R   	&kp T                    &kp Y   &kp U   	&kp I       &kp O   &kp P
+            &kp A       &kp S   &kp D   &mt LSHFT F   	&kp G                    &kp H   &mt SHFT J   	&kp K       &kp L   &kp RET
+            &mt LSHFT Z &kp X   &kp C   &kp V   	&kp B     &kp C_MUTE     &kp N   &kp M  	&kp COMMA   &kp DOT &mt RSHFT FSLH
+                                        &kp LCTRL  &lt 1 BSPC                    &lt 1 SPACE       &kp RALT
 			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 		};
